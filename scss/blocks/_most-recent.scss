@@ -1,0 +1,89 @@
+.most-recent {
+  padding-top: 67px;
+  background-color: #F7F7F7;
+}
+
+.most-recent__heading {
+  text-align: center;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #2E2E2E;
+  margin: 0;
+  margin-bottom: 33px;
+}
+.most-recent__list {
+  display: flex;
+  @include list-unstyled;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.most-recent__item {
+  max-width: 296px;
+  background-color: #FFFFFF;;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 108px;
+}
+
+.most-recent__item-content{
+  padding-left: 13px;
+}
+.most-recent__item-img {
+  margin-bottom: 14px;
+}
+.most-recent__item-heading {
+  margin: 0;
+  margin-bottom: 6px;
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #101315;
+}
+.most-recent__item-txt {
+  margin: 0;
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #7A7A7A;
+  margin-bottom: 45px;
+
+}
+.most-recent__item-information {
+  display: flex;
+  align-items: center;
+  
+}
+.most-recent__item-information-img {
+  margin-right: 10px;
+}
+.most-recent__item-information-txt {
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 35px;
+  color: #999999;
+  margin: 0;
+}
+
+.most-recent__item-information{
+  margin-top: auto;
+}
+
+@include breakpoint-down(933px){
+  .most-recent__list{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+}

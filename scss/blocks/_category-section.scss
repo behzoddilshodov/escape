@@ -1,0 +1,38 @@
+.category-container{
+  background-color: #FFFFFF;
+}
+
+.category__list {
+  display: flex;
+  @include list-unstyled;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.category__link {
+  font-family:$font-stack;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #768088;
+}
+
+@include breakpoint-down(588px){
+  .category__list{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .category__item:not(:last-child){
+    margin-bottom:20px;
+  }
+}

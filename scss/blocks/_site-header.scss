@@ -1,0 +1,65 @@
+.site-header-vs-section-wrap {
+  background-image: url(/img/vkg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+.site-header{
+  padding-top: 20px;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__logo {
+  display: block;
+}
+
+.site-header--responsive__img{
+  display: none;
+}
+
+.site-navbar__list {
+  display: flex;
+  @include list-unstyled;
+}
+
+.site-navbar__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.site-nav__link {
+  font-family:$font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+@include breakpoint-down(520px){
+  .site-navbar{
+    display: none;
+  }
+
+  .site-header--responsive__img{
+    display: block;
+  }
+}
+
+.site-navbar__list--active{
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

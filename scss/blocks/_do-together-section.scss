@@ -1,0 +1,56 @@
+.do-together {
+  padding-top: 130px;
+  padding-bottom: 157px;
+}
+
+.do-together__heading {
+  font-family:$font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.do-together__txt {
+  font-family: $font-stack;
+  max-width: 504px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.63);
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 31px;
+}
+
+.do-together__link-wrap{
+  text-align:center;
+}
+
+.do-together__link {
+  display: inline-block;
+  padding: 12px 31px;
+  background-color: #DD783F;
+  border-radius: 3px;
+  font-family:$font-stack ;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+@include breakpoint-down(375px){
+  .do-together__heading {
+    font-size:45px;
+    line-height: 45px;
+  }    
+}
